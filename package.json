@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "type-check": "tsc --pretty --noEmit",
+    "lint": "eslint ./ --ext js,jsx,ts,tsx --fix"
   },
   "dependencies": {
     "next": "10.1.3",
